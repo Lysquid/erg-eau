@@ -3,17 +3,19 @@
 ## Ressources utilisées
 
 - [Keyboard Layouts Doc](https://bit.ly/keyboard-layouts-doc), ressource théorique très complète
-- Page dev de [Ergo-L](https://ergol.org/dev), pour la plupart des statistiques
+- La [page de statistiques]((https://ergol.org/stats)) d'Ergo-L
 - [Layout playground](https://o-x-e-y.github.io/layouts/playground/), pour des statistiques complémentaires (LSB, BadRedirects) et du prototypage rapide
-- Les [statistiques de Ergo-L](corpus/) pour le français et l'anglais
+- Les [statistiques de fréquence](corpus/) de Ergo-L pour le français et l'anglais
 - [Heatmap d'effort](https://colemakmods.github.io/mod-dh/model.html) des touches du clavier, développée pour Colmak-DH
 - Les retours sur le [discord d'Ergo-L](https://discord.gg/RH34GjQEgC)
 
 ## Layout
 
-![layout](img/erglace.png)
+![base layout](img/erglace.svg)
 
-![dead key layout](img/erglace_1dk.png)
+![dead key layout](img/erglace_1dk.svg)
+
+![altgr layout](img/erglace_altgr.svg)
 
 ## Notes de conceptions
 
@@ -53,13 +55,13 @@
 
 - `é` est de loin l'accent le plus important, étant la 15ème lettre la plus utilisée en français. Le placer sous `e` rendrait le digramme `ée` lent et surchargerait encore plus le majeur. J'ai essayé de le placer sous `r`, colonne sur laquelle le SFB est minimal, mais le SKU engendré sur l'annulaire était considérable, et se ressentait beaucoup dans des mots comme 'préféré'. J'ai finalement opté pour le mettre derrière `u`, ce qui lui donne une place confortable sur la home row, et qui s’enchaîne bien avec `e`. Cela permet aussi de mieux charger l'index en français. La contre-parti est les digrammes `é,` et `éf`, ainsi qu'un décalage nécessaire des variantes accentuées de `u`.
 
-- `?` et `!` sont derrière `,` et `.` car je considère que ce sont les caractères les plus utiles à la ponctuation parmi tous les symboles. Par ailleurs, les avoir derrière shift permet d’enchaîner directement avec la majuscule de la phrase suivante, contrairement à `;` et `:`, à condition de ne pas utiliser d'espaces insécables comme en Ergo-L.
+- `-` est sous `e` pour minimiser le SFB. N'importe quel autre caractère créé un SFB important avec la colonne `oe`. `,` a une meilleure position que `.` car elle est beaucoup plus courante.
 
-- `-` et `_` sont sous `e` pour minimiser le SFB. J'apprécie avoir `_` derrière shift pour l'écriture des constantes en programmation. `-_` est par ailleurs une touche standard de qwerty, qui est assez logique.
+- J'aurais aimé avoir `'` en accès direct puisque c'est un caractère courant en français, anglais et programmation, mais il se lit avec toutes les lettres. Je suis resté sur la solution plutôt élégante de Ergo-L, d'avoir `'` derrière la touche morte + espace, qui garantit un SFB minimum.
 
-- J'aurais aimé avoir une touche pour `'` puisque c'est un caractère courant en français, anglais et programmation, mais il se lit avec toutes les lettres. Je suis resté sur la solution plutôt élégante de Ergo-L, d'avoir `'` derrière la touche morte + espace, qui garantit un SFB minimum.
+- Historiquement, Erglace avait sa propre couche de symbole, héritée de ma couche personelle, toujours disponible sur mon [firmware QMK](https://github.com/Lysquid/qmk_keymap). Mais Erglace étant développé au sein de la communauté Ergo-L, il est apparu plus pertinent de reprendre celle d'Ergo-L. Cela permet de simplifier la maintenance et de rendre plus clair la différence entre Ergo-L et Erglace.
 
-- La layer de symbole est inspirée de celle d'Ergo-L, avec notamment les différents types de caractères ouvrants et fermant à gauche. Les symboles les moins courants sont dans les 4 coins des deux splits, et ceux qui sont souvent doublés sont sur les index plutôt que les auriculaires. `^` et `$` ont leur position sur `b` et `w` car leur utilisation sur vim correspond bien. `%` et `+` sont en haut pour un accès facile depuis la num row. `;` est en bas car il est courant et se combine peu avec les autres symboles de la ligne du haut, qui sont assez liés entre eux. `:=` est un digramme commun dans certains langages, mais peut être fait facilement en cheating.
+- Dans cette version précédente, `?`, `!` et `_` étaient respectivement derrière `,`, `.` et `-` en shift. Nous avons longtemps débattu sur ce sujet, la conclusion étant que cela est plutôt une affaire de goût personnel. La solution la plus simple a donc été de se caler sur les conventions d'Ergo-L, ce qui simplifie la compatibilité avec la couche de symboles.
 
 ## Statistiques utiles
 
