@@ -3,7 +3,7 @@
 ## Ressources utilisées
 
 - [Keyboard Layouts Doc](https://bit.ly/keyboard-layouts-doc), ressource théorique très complète
-- La [page de statistiques]((https://ergol.org/stats)) d'Ergo-L
+- La [page de statistiques](https://lysquid.github.io/Erglace/stats) d'Ergo-L
 - [Layout playground](https://o-x-e-y.github.io/layouts/playground/), pour des statistiques complémentaires (LSB, BadRedirects) et du prototypage rapide
 - Les [statistiques de fréquence](corpus/) de Ergo-L pour le français et l'anglais
 - [Heatmap d'effort](https://colemakmods.github.io/mod-dh/model.html) des touches du clavier, développée pour Colmak-DH
@@ -67,7 +67,7 @@
 
 ## Statistiques utiles
 
-Quelques statistiques non exhaustifs extraits du json [en+fr](corpus/en+fr.json).
+Quelques statistiques non exhaustives extraites du json [en+fr](corpus/en+fr.json).
 
 ### Digrammes de voyelles
 
