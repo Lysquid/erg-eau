@@ -49,13 +49,15 @@
 
 - `q` et `x` sur la colonne de l'auriculaire peuvent aussi être intervertis. Mais `q` étant beaucoup plus courant, il a la position la plus confortable, en haut. Un défaut est l'enchaînement `sq` qui n'est alors pas très confortable.
 
-- Les accents ont ensuite été répartis, de préférences proches des lettres correspondantes, dans la limite de la place disponible du côté des voyelles. `ê` est sur e, car il y a souvent un autre `e` dans le même mot comme dans `même` et `être`.
+- Les accents ont ensuite été répartis sur la couche correspondante, de préférence proches des lettres correspondantes, dans la limite de la place disponible du côté des voyelles. `ê` est sur e, car il y a souvent un autre `e` dans le même mot comme dans `même` et `être`.
 
-- `a` étant sous la touche morte, ses variantes accentuées ne peuvent pas être sur cette colonne sous peine d'un SFB important. `à` et `â` ont donc été placés à droite sur les lettres avec lesquelles il fait le plus petit SFB. `æ` et `œ` ont aussi été placés à droite par manque de place, ce qui leur donne une place sur la home row.
+- `a` étant sous la touche morte, ses variantes accentuées ne peuvent pas être sur cette colonne sous peine d'un SFB important. `à` et `â` ont donc été placés à droite sur les lettres avec lesquelles il fait le plus petit SFB. `œ` a aussi été placé à droite par manque de place, ce qui lui donne une place sur la home row.
 
 - `é` est de loin l'accent le plus important, étant la 15ème lettre la plus utilisée en français. Le placer sous `e` rendrait le digramme `ée` lent et surchargerait encore plus le majeur. J'ai essayé de le placer sous `r`, colonne sur laquelle le SFB est minimal, mais le SKU engendré sur l'annulaire était considérable, et se ressentait beaucoup dans des mots comme 'préféré'. J'ai finalement opté pour le mettre derrière `u`, ce qui lui donne une place confortable sur la home row, et qui s’enchaîne bien avec `e`. Cela permet aussi de mieux charger l'index en français. La contre-parti est les digrammes `é,` et `éf`, ainsi qu'un décalage nécessaire des variantes accentuées de `u`.
 
-- `-` est sous `e` pour minimiser le SFB. N'importe quel autre caractère créé un SFB important avec la colonne `oe`. `,` a une meilleure position que `.` car elle est beaucoup plus courante.
+- `_` a une place sur la home de la couche 1dk pour pouvoir écrire facilement des noms de fichiers et variables où les mots sont espacés d'underscores.
+
+- `-` est derrière `e` en shift pour minimiser le SFB. N'importe quel autre caractère créé un SFB important avec la colonne `oe`. `,` a une meilleure position que `.` car elle est beaucoup plus courante.
 
 - J'aurais aimé avoir `'` en accès direct puisque c'est un caractère courant en français, anglais et programmation, mais il se lit avec toutes les lettres. Je suis resté sur la solution plutôt élégante de Ergo-L, d'avoir `'` derrière la touche morte + espace, qui garantit un SFB minimum.
 
