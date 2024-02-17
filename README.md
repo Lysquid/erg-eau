@@ -1,58 +1,45 @@
-[Ergo‑L](https://ergol.org/)
+[Erglace](https://lysquid.github.io/Erglace/)
 ================================================================================
 
-[**(in English hereinafter)**](#English)
+A layout for French, English and programming. It is a fork of [ErgEAU](https://github.com/IgrecL/ErgEAU), initially adapted for compact keyboards compatibility. It uses many conventions of [Ergo-L](https://github.com/Nuclear-Squid/ergol).
 
-Une disposition de clavier ergonomique optimisée pour le français, l’anglais et
-la programmation.
-
-- Disposition **optimisée pour le français _et_ l’anglais**;
-- Couche AltGr optionnelle, optimisée pour l’enchaînement des symboles de
-  programmation;
-- **Conservation des raccourcis usuels** : <kbd>Ctrl-{Q,A,S,Z,X,V}</kbd>
-  (<kbd>Ctrl-C</kbd> est décalé, mais reste faisable d’une main);
-- Support de tous les caractères spéciaux utilisés en français (diacritiques,
-  majuscules accentuées, lettres entrelacées, symboles de ponctuation…);
-- **Chiffres en accès direct**.
-
-
-English
+TL;DR
 --------------------------------------------------------------------------------
 
-A Colemak-style layout for French-speaking users.
+* a keyboard layout optimized for French and English
+* uses a dead key for the most frequent accented characters
+* uses the AltGr layer for programming symbols
+* fits on 30 keys for compact keyboards compatibility
+* trades easy access to common shortcuts for full optimization
+* lower SFB and LSB than most previous French layouts
+* few redirects, at the cost of few rolls
 
+See the [design notes](NOTES.md) for the details, and join the [Ergo-L discord](https://discord.gg/RH34GjQEgC) to discuss the layout with us. [Check the stats!][1]
 
-TL;DR:
---------------------------------------------------------------------------------
+[1]: https://lysquid.github.io/Erglace/stats#/erglace/ol40/en+fr
 
-* a Colemak-style keyboard layout optimized for French and English;
-* most common keyboard shortcuts are preserved (like in Colemak);
-* use a dead key for the most frequent accented characters;
-* use the AltGr layer for programming symbols.
-
-This layout claims to be better than Bépo for French, better than Dvorak for
-English and better than Qwerty for programming. [Check the stats !][1]
-
-[1]: https://ergol.org/stats#/ergol/iso/en+fr
-
+> La différence avec [Ergo-L](https://ergol.org/) ?
+>
+> Erglace abandonne l'accès facile au raccourcis usuels (Ctrl+C, Ctrl+V, ...) pour atteindre de meilleurs statistiques, en particulier un SFB plus bas, sous les 1%. Le SFB correspond aux enchaînements de deux caractères qui utilisent le même doigt, ce qui ralentit la vitesse de frappe.
+>
+> L'autre différence est qu'Erglace cherche à minimiser les redirections, c'est-à-dire les enchaînements de trois caractères d'une même main avec un changement de direction, mouvement considéré comme inconfortable. Pour ce faire, toutes les voyelles se retrouvent d'un côté, comme en Bépo, ce qui favorise l'alternance des mains. Le désavantage est que la disposition a moins de roulements, c'est-à-dire des enchaînements de trois lettres d'une main dans une même direction, qui peuvent être appréciables.
+>
+> Au-delà du placement des lettres, Erglace a les mêmes fonctionnalités qu'Ergo-L. La couche de symboles est directement reprise de ce dernier.
 
 Layout
 --------------------------------------------------------------------------------
 
-![base layout](img/ergol_fr.svg)
+![base layout](img/erglace.svg)
 
-The dead <kbd>★</kbd> key gives access to all acute accents, grave accents, cedillas, digraphs and quote signs you’ll need to write in proper French:
+The dead key <kbd>★</kbd> gives access to all accented letters you’ll need to write in proper French:
 
-![dead key layout](img/ergol_1dk.svg)
+![dead key layout](img/erglace_1dk.svg)
 
 … and the AltGr layer is fully dedicated to programming symbols.
 
-![altgr layout](img/ergol_altgr.svg)
+![altgr layout](img/erglace_altgr.svg)
 
-The default layout allows to write in English, French, German and Esperanto easily.
-
-[More information on the website](https://ergol.org) (in French).
-
+[Try it out!](https://lysquid.github.io/Erglace)
 
 Install
 --------------------------------------------------------------------------------
@@ -65,20 +52,20 @@ their guide), you can just run the following command:
 pipx install kalamine
 ```
 
-Download the [layouts/ergol.toml][4] file in this repo and build the layout :
+Download the [layouts/erglace.toml][4] file in this repo and build the layout :
 
 ```bash
-kalamine ergol.toml
+kalamine make erglace.toml
 ```
 
 You’ll get a `dist` folder containing all of the drivers.
 
-Then, to install Ergo‑L, follow the [install section of Kalamine’s repo][3],
+Then, to install Erglace, follow the [install section of Kalamine’s repo][3],
 and you should be good to go !
 
 [2]: https://github.com/fabi1cazenave/kalamine
 [3]: https://github.com/fabi1cazenave/kalamine#installing-distributable-layouts
-[4]: https://github.com/Nuclear-Squid/ergol/blob/master/layouts/ergol.toml
+[4]: layouts/erglace.toml
 [5]: https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx
 
 
@@ -89,13 +76,13 @@ install keyboard layouts on Linux. You can drop `sudo` if you use wayland, but
 it’s required on Xorg.
 
 ```bash
-sudo xkalamine install ergol.toml  # Install the layout
+sudo xkalamine install erglace.toml  # Install the layout
 ```
 
 Then switch to Ergo‑L using the following command:
 
 ```bash
-setxkbmap fr -variant ergol  # Switch your keyboard layout to ergol
+setxkbmap fr -variant erglace  # Switch your keyboard layout to erglace
 ```
 
 Make Your Own !
